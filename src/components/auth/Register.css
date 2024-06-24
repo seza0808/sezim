@@ -1,0 +1,288 @@
+/* Общие стили */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: white;
+}
+
+div {
+  background-color: #000;
+  flex-grow: 1;
+  width: 100%;
+  justify-content: center;
+  padding-bottom: 0px;
+}
+
+section {
+  /* background: linear-gradient(rgba(11, 1, 1, 0.9)); */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.register img {
+  width: 43px;
+  height: 43px;
+  margin-top: -50px;
+  margin-left: 47%;
+}
+
+section .register {
+  margin: 105px 0;
+  padding: 34px;
+  width: 90%;
+  max-width: 450px;
+  height: auto;
+  background-color: #000;
+  border-radius: 5px;
+}
+
+section .register h1 {
+  text-align: center;
+  font-family: CircularSpTitle, sans-serif;
+  margin: 35px 0;
+  color: white;
+  font-size: 48px;
+  white-space: pre-line;
+  margin: 0 auto;
+  width: 90%;
+  max-width: 350px;
+}
+
+section .register .register-log {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight: bold;
+}
+
+section .register .register-log label {
+  color: white;
+  font-size: 14px;
+  margin-bottom: 10px;
+  display: inline-block;
+}
+
+.account-connect button {
+  padding: 6px 12px;
+  font-size: 12px;
+}
+section .register .register-log input {
+  display: block;
+  padding: 14px;
+  width: 90%;
+  max-width: 324px;
+  margin-bottom: 25px;
+  font-size: 15px;
+  font-weight: 500;
+  background: rgb(236, 230, 230);
+  outline: none;
+  border: none;
+  appearance: none;
+  border-radius: 4px;
+  box-shadow: inset 0 0 0 1px #878787;
+  color: rgb(10, 10, 10);
+  border-radius: 20px;
+  inline-size: 450px;
+}
+
+section .register .register-log button {
+  background-color: #1ed760;
+  border-radius: 30px;
+  font-weight: bold;
+  padding: 8px 32px;
+  height: 49px;
+  width: 90%;
+  max-width: 335px;
+  letter-spacing: 0.4px;
+  font-size: 16px;
+  margin: 20px 0;
+  inline-size: 450px;
+}
+
+.line-container {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  justify-content: center;
+  width: 90%;
+  max-width: 340px;
+  margin: 30px auto;
+}
+
+.line-container::before,
+.line-container::after {
+  content: "";
+  flex: 1;
+  border-top: 1px solid rgb(165, 164, 164);
+  margin: 0 10px;
+}
+
+.line-text {
+  font-size: 16px;
+  color: #fff;
+}
+
+.images {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 30px;
+}
+
+.images button {
+  width: 90%;
+  max-width: 324px;
+  text-align: center;
+  padding: 5px 10px;
+  border: none;
+  outline: none;
+  margin: 5px 0;
+  border-radius: 200px;
+  color: white;
+  background: transparent;
+  border: 1px solid #878787;
+  font-size: 15px;
+  font-weight: bold;
+  padding-top: 10px;
+  margin-top: 20px;
+}
+
+.images button img {
+  width: 20px;
+  height: 23px;
+  float: left;
+  margin: 3px;
+  padding-bottom: 4px;
+}
+
+.images button span {
+  position: relative;
+  top: 4px;
+}
+
+hr {
+  margin: 32px auto;
+  border: none;
+  border-top: 1px solid rgb(41, 41, 41);
+  width: 90%;
+  max-width: 330px;
+}
+
+.text {
+  display: block;
+  text-align: center;
+  color: var(--text-subdued, #6a6a6a);
+  width: 100%;
+  margin-top: 20px;
+}
+
+.text a {
+  color: var(--text-base, #d3cece);
+}
+
+@media (max-width: 768px) {
+  .register img {
+    margin-left: 45%;
+    height: auto;
+    width: 33px;
+  }
+
+  section .register {
+    padding: 24px;
+    width: 100%;
+    margin: 60px 0;
+  }
+
+  section .register h1 {
+    font-size: 22px;
+    text-align: center;
+  }
+
+  section .register .register-log input {
+    padding: 12px;
+  }
+
+  section .register .register-log button {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+
+  .line-container {
+    width: 80%;
+  }
+
+  .images button {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .register img {
+    margin-left: 40%;
+  }
+
+  section .register {
+    padding: 16px;
+    margin: 40px 0;
+  }
+
+  section .register h1 {
+    font-size: 20px;
+  }
+
+  section .register .register-log input {
+    padding: 10px;
+    inline-size: 350px;
+  }
+
+  section .register .register-log button {
+    padding: 8px 16px;
+    font-size: 12px;
+  }
+
+  .line-container {
+    width: 70%;
+  }
+
+  .images button {
+    padding: 8px 16px;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 320px) {
+  .register img {
+    margin-left: 35%;
+  }
+
+  section .register {
+    padding: 12px;
+    margin: 30px 0;
+  }
+
+  section .register h1 {
+    font-size: 18px;
+  }
+
+  section .register .register-log input {
+    padding: 8px;
+  }
+
+  section .register .register-log button {
+    padding: 6px 12px;
+    font-size: 12px;
+  }
+
+  .line-container {
+    width: 60%;
+  }
+}
