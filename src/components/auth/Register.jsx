@@ -43,7 +43,12 @@ const Register = () => {
               placeholder="password"
               style={{ marginBottom: "55px" }}
             />
-
+            <label>Password-Confrim</label>
+            <input
+              onChange={(e) => setPasswordConfirm(e.target.value)}
+              type="text"
+              placeholder="password-confrim"
+            />
             <button onClick={handleSave}>Further</button>
           </form>
         </div>
