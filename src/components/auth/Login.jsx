@@ -83,7 +83,7 @@ const Login = () => {
 
           <div className="last">
             <span>Don't you have an account?</span>
-            <a href="#">Sign up for Spotify </a>
+            {/* <a href="#">Sign up for Spotify </a> */}
           </div>
         </div>
       </section>
