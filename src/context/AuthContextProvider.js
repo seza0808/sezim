@@ -8,7 +8,7 @@ const AuthContextProvider = ({ children }) => {
   const navigate = useNavigate();
   const [currentUser, setCurrentUser] = useState(null);
   const [error, setError] = useState(false);
-  //!register
+  //!REGISTER
   const handleRegister = async (formData) => {
     try {
       await axios.post(`${API}/user/registers/`, formData);
